@@ -24,11 +24,13 @@
                 <li><a href="index.html"><img src="assets/img/soul.png" alt="Imagen del alma de Kris" class="menu-img">Inicio</a></li>
                 <li><a href="pages/cap1.html"><img src="assets/img/soul.png" alt="Imagen del alma de Kris" class="menu-img">Capítulo 1</a></li>
                 <li><a href="pages/cap2.html"><img src="assets/img/soul.png" alt="Imagen del alma de Kris" class="menu-img">Capítulo 2</a></li>
+                <li><a href=""><img src="assets/img/soul.png" alt="Imagen del alma de Kris" class="menu-img">Capítulo 3</a></li>
+                <li><a href=""><img src="assets/img/soul.png" alt="Imagen del alma de Kris" class="menu-img">Capítulo 4</a></li>
                 <li><a href="pages/faq.html"><img src="assets/img/soul.png" alt="Imagen del alma de Kris" class="menu-img">FAQ</a></li>
                 <li><a href="pages/tracks.html"><img src="assets/img/soul.png" alt="Imagen del alma de Kris" class="menu-img">Tracks</a></li>
             </ul>
         </nav>
-    </div>
+    </div> <!-- Incialmente haría que en mobile también hubiera un submenu dropdown aquí... Realmente no sé en que chocaban los códigos, pero por alguna extraña razón cuando lo "lograba" el sistema de sonido para mobile fallaba, así que no tuve más remedio que dejarlo así. PD: Esto es una mierda así, ignora este mensaje -->
     <div>
         <div class="menu-desktop">
             <nav class="navbar">
@@ -53,6 +55,11 @@
             </nav>
         </div>
     </div>
+    <div>
+        <button class="scroll-up-btn">
+            <i class="arrow-up"></i>
+        </button>
+    </div>
     <header>
         <a href="index.html"><img src="assets/img/logo.png" alt="Deltarune logo"></a>
     </header>
@@ -66,10 +73,14 @@
         <br>
         <h2>Capítulos</h2>
         <p>Para ver información sobre cada capítulo de Deltarune, haz click en sus respectivos nombres:</p>
-        <ul class="cap_lista">
-            <li><a href="pages/cap1.html">Capítulo 1: The Beginning</a></li>
-            <li><a href="pages/cap2.html">Capítulo 2: A Cyber's World</a></li>
-        </ul>
+        <div class="cap_container">
+            <ul class="cap_lista">
+                <li><a href="pages/cap1.html">Capítulo 1: The Beginning<img src="assets/img/c1_logo.png" alt="Logo capítulo 1" class="disponibles"></a></li>
+                <li><a href="pages/cap2.html">Capítulo 2: A Cyber's World<img src="assets/img/c2_logo.png" alt="Logo capítulo 2" class="disponibles"></a></li>
+                <li><a href="">Capítulo 3: ???<img src="assets/img/no_c_logo.png" alt="Logo ???"></a></li>
+                <li><a href="">Capítulo 4: ???<img src="assets/img/no_c_logo.png" alt="Logo ???"></a></li>
+            </ul>
+        </div>
     </section>
 
     <section>

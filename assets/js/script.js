@@ -2,22 +2,20 @@
 var menu = document.querySelector('.hamburger');
 var menuMobile = document.querySelector('.menuppal');
 
-// Método para alternar menú
 function toggleMenu(event) {
     event.preventDefault();
     this.classList.toggle('is-active');
     menuMobile.classList.toggle('is_active');
 
-    // Sonidos de apertura y cierre
     if (menuMobile.classList.contains("is_active")) {
         playSound(menuOpenSound);
     } else {
         playSound(menuCloseSound);
     }
 }
-
-// Evento de clic para abrir/cerrar menú
+// Audio menú mobile
 menu.addEventListener('click', toggleMenu, false);
+
 
 // Menú desktop - Búsqueda en la barra
 function buscar() {
@@ -50,18 +48,35 @@ document.getElementById("search").addEventListener("keypress", function(event) {
     if (event.key === "Enter") buscar();
 });
 
-// 🔹 Manejo de sonidos
+// Manejo de sonidos
 const basePath = window.location.pathname.includes("/pages/") ? "../assets/audio/" : "assets/audio/";
 const hoverSound = new Audio(basePath + "hover.mp3");
 const clickSound = new Audio(basePath + "click.mp3");
-const menuOpenSound = new Audio(basePath + "menu-open.mp3");
-const menuCloseSound = new Audio(basePath + "menu-close.mp3");
-
 // Función para reproducir sonido de manera segura
 function playSound(audio) {
     audio.currentTime = 0;
     audio.play().catch(error => console.error("Error al reproducir sonido:", error));
 }
+// Botones en lista de localizaciones
+const localizaciones = document.querySelectorAll(".localizaciones li");
+localizaciones.forEach(boton => {
+    boton.addEventListener("mouseenter", () => playSound(hoverSound));
+    boton.addEventListener("click", () => playSound(clickSound));
+});
+// Botón de scroll-up
+const scrollUpBtn = document.querySelector(".scroll-up-btn");
+if (scrollUpBtn) {
+    scrollUpBtn.addEventListener("mouseenter", () => playSound(hoverSound));
+    scrollUpBtn.addEventListener("click", () => playSound(clickSound));
+}
+// Enlaces en la lista de capítulos
+const capitulos = document.querySelectorAll(".cap_lista li a");
+capitulos.forEach(cap => {
+    cap.addEventListener("mouseenter", () => playSound(hoverSound));
+    cap.addEventListener("click", () => playSound(clickSound));
+});
+
+
 
 // Eventos para enlaces del menú (desktop y mobile)
 const navLinks = document.querySelectorAll(".nav-links a, .menuppal ul li a");
@@ -128,3 +143,41 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Scroll botón
+const btn = document.querySelector(".scroll-up-btn");
+btn.addEventListener("click", () => {
+    document.documentElement.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
+
+// Botones 3D
+document.addEventListener('DOMContentLoaded', () => {
+    const apply3DEffect = (selector) => {
+    const listItems = document.querySelectorAll(`${selector} li`);
+    listItems.forEach((item) => {
+        item.addEventListener('mousemove', (e) => {
+        const rect = item.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = -(y - centerY) / 10;
+        const rotateY = (x - centerX) / 10;
+        item.style.transform = `perspective(1000px) scale(1.05) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        item.classList.add('hovered');
+        });
+        item.addEventListener('mouseleave', () => {
+        item.style.transform = 'perspective(1000px)';
+        item.classList.remove('hovered');
+        });
+        item.addEventListener('mouseenter', () => {
+        item.classList.add('hovered');
+        });
+    });
+    };
+    // Aplica el efecto tanto a cap_lista como a localizaciones
+    apply3DEffect('.cap_lista');
+    apply3DEffect('.localizaciones');
+});  

@@ -3,3 +3,7 @@
 @use 'screens' as sc; /* sc = Screens */
 @use 'images';
 @use 'texto';
+
+html {
+    scroll-behavior: smooth;
+}
