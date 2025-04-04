@@ -13,19 +13,19 @@
 
 ## 🌐 DEMO EN VIVO
 
-> 🔗 [**¡Haz clic aquí para entrar al Dark World!**](https://nicholas-delarosa.github.io/preentrega_3/)  
-> 🚀 Sitio hosteado con **GitHub Pages** y armado 100% a mano.
+> 🚀 ¡Explora la página y sumérgete en el universo de DELTARUNE!  
+> 🕹️ [**Pulsa aquí para abrir el portal oscuro**](https://nicholas-delarosa.github.io/preentrega_3/)
 
 ---
 
 ## 🧭 ÍNDICE
 
-- [📖 Introducción](#📖-introducción)
-- [🎬 Capítulos](#🎬-capítulos)
-- [🎶 Extra Musical](#🎶-extra-musical)
-- [❓ Preguntas Frecuentes](#❓-preguntas-frecuentes)
-- [🧑‍💻 Créditos](#🧑‍💻-créditos)
-- [⚙️ Tecnologías Usadas](#⚙️-tecnologías-usadas)
+- [📖 Introducción](#-introducción)
+- [🎬 Capítulos](#-capítulos)
+- [🎶 Extra Musical](#-extra-musical)
+- [❓ Preguntas Frecuentes](#-preguntas-frecuentes)
+- [🧑‍💻 Créditos](#-créditos)
+- [⚙️ Tecnologías Usadas](#-tecnologías-usadas)
 
 ---
 
@@ -45,16 +45,16 @@ Esta fanpage es un homenaje jugable y visual a los primeros capítulos, donde ex
 
 ## 🎬 CAPÍTULOS
 
-### 🔹 Capítulo 1: *Fuente Oscura*
+### 🔹 Capítulo 1: *The Beginning*
 
-- Kris, Susie y Ralsei despiertan en otro mundo
+- Kris, y Susie despiertan en otro mundo. Conocen a Ralsei
 - Confrontan al caos, el destino y a Lancer
-- Sellan su primer portal oscuro
+- Sellan su primera fuente oscura
 
 ### 🔸 Capítulo 2: *Cyber World*
 
-- Nueva dimensión digital
-- Aparece la Reina, un personaje dominante y caótica
+- Nueo mundo digital
+- Aparece Queen, un personaje dominante y caótica
 - Spamton aparece como vendedor... muy "especial"
 
 <p align="center">
@@ -75,8 +75,8 @@ Descubre temas eliminados del Capítulo 2 que aún viven en los rincones secreto
 ## ❓ PREGUNTAS FRECUENTES
 
 💡 ¿Deltarune tiene relación con Undertale?  
-💾 ¿Cuántos capítulos tendrá?  
-🛡️ ¿Se puede jugar sin combatir?
+💾 ¿Cuántos misterios habrán?  
+🛡️ ¿Se puede jugar sin abrazar a Ralsei?
 
 🧠 [Explora la sección de preguntas frecuentes](https://nicholas-delarosa.github.io/preentrega_3/pages/faq.html)
 
@@ -99,6 +99,7 @@ Descubre temas eliminados del Capítulo 2 que aún viven en los rincones secreto
 |----------------|-----------|
 | `HTML5` | Estructura base del sitio |
 | `CSS3` | Estilos visuales personalizados |
+| `JS` | ¡Animaciones y más! |
 | `GitHub Pages` | Hosting gratuito y confiable |
 | `💡 Creatividad` | Potenciado al 200% |
 
