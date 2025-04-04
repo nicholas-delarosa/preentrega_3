@@ -1,0 +1,104 @@
+@use 'screens' as sc; /* sc = Screens */
+@use 'mixins' as m; /*m = mixins*/
+
+.piano {
+    @include m.center-flex;
+    @include sc.small-screens {
+        @include m.center-mobile
+    }
+}
+
+body {
+    header {
+        img {
+            @include m.center-mobile;
+            @include m.center-block;
+            @include sc.small-screens {
+                @include m.special-imgs;
+            }
+            @include sc.large-screens {
+                display: none
+            }
+        }
+    }
+    video {
+        @include m.ani-imgs;
+        @include m.rev-imgs;
+        @include m.center-block;
+        @include m.center-mobile;
+    }
+}
+
+img.nav_logo_desktop {
+    display: flex;
+    justify-self: center;
+    width: 300px;
+    height: auto;
+}
+
+img.dog {
+    @include sc.large-screens {
+        @include m.tada-imgs-desktop;
+        }
+    @include m.center-block;
+    @include m.center-mobile;
+}
+
+img.fun_gang {
+    @include m.center-flex;
+    @include sc.small-screens {
+        @include m.special-imgs;
+    }
+}
+
+img.name_caps {
+    @include m.center-block;
+    @include sc.small-screens {
+        @include m.center-mobile;
+    }
+}
+
+img.mundo_oscuro, img.field, img.forest, img.castillo, img.jevil, img.pueblo, img.ciudad, img.mansion, img.puzzle, img.rouxls, img.queen {
+    @include m.ani-imgs;
+    @include m.rev-imgs;
+    @include sc.small-screens {
+        @include m.center-mobile;
+        @include m.center-block;
+    }
+}
+
+div.img_mundo_oscuro, div.img_field, div.img_forest, div.img_castillo, div.img_jevil, div.img_pueblo, div.img_ciudad, div.img_mansion, div.img_puzzle, div.img_rouxls, div.img_queen {
+    @include sc.large-screens {
+        @include m.imgs-p-caps;
+    }
+}
+
+div.logos {
+    @include sc.small-screens {
+        @include m.center-block;
+    }
+    @include sc.large-screens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+div.logos img {
+    @include sc.small-screens {
+        max-width: 50%;
+        margin: 0 auto;
+        height: auto;
+    }
+}
+
+div.logos img.ps4_logo {
+    @include sc.small-screens {
+        max-width: 100%;
+    }
+    @include sc.large-screens {
+        margin-left: 20px;
+    }
+}
+

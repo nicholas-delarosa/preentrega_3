@@ -1,0 +1,82 @@
+@use 'screens' as sc;
+@use 'mixins' as m;
+
+body {
+    section {
+        audio {
+            @include m.center-block;
+        }
+        a {
+            text-decoration: none;
+            color: yellow;
+        }
+    }
+    ul.cap_lista {
+        list-style: disc;
+        color: yellow;
+    }
+    p {
+        text-align: justify;
+    }
+    p.textdog {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: 800;
+        @include sc.small-screens {
+            display: none;
+        }
+    }
+    p.contacto {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    p.dont_forget {
+        font-weight: 800;
+    }
+    p.email {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+    h1.titulos {
+        @include m.center-block;
+    }
+    h2.titulos_tracks {
+        color: yellow;
+        text-align: center;
+    }
+    article {
+        ul {
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    strong {
+        font-weight: 400;
+    }
+    strong.issue {
+        color: red;
+    }
+    strong.resolve {
+        color: #00FF00;
+    }
+    footer {
+        font-size: 8px;
+        text-align: center;
+        color: gray;
+        @include sc.small-screens {
+            font-size: 6px;
+        }
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}

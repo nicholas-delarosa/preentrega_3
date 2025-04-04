@@ -1,0 +1,24 @@
+@use 'mixins' as m;
+@use 'screens' as sc;
+
+body {
+    background-color: black;
+    font-family: "UT/DR Text";
+    font-size: 14px;
+    color: white;
+}
+
+div.menu-mobile {
+    @include sc.large-screens {
+        display: none;
+    }
+}
+div.menu-desktop, div.blank {
+    @include sc.small-screens {
+        display: none;
+    }
+}
+
+@include m.burger;
+@include m.menu;
+@include m.read-bar;

@@ -1,0 +1,332 @@
+@use 'screens' as sc;
+
+@mixin center-flex {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*Aunque se llame así, puede ser usado en vista desktop*/
+@mixin center-mobile {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@mixin center-block {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+@mixin special-imgs {
+    max-width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+
+@mixin imgs-p-caps {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10px;
+}
+
+@mixin ani-imgs {
+    @keyframes reveal {
+        from {
+            opacity: 0;
+            clip-path: inset(45% 20% 45% 20%);
+        }
+        to {
+            opacity: 1;
+            clip-path: inset(0% 0% 0% 0%);
+        }
+    }
+}
+
+@mixin tada-imgs-desktop {
+    @keyframes tada {
+        0% { transform: scale(1); }
+        10%, 20% { transform: scale(0.9) rotate(-3deg); }
+        30%, 50%, 70%, 90% { transform: scale(1.1) rotate(3deg); }
+        40%, 60%, 80% { transform: scale(1.1) rotate(-3deg); }
+        100% { transform: scale(1) rotate(0); }
+    }
+    .dog:hover {
+        animation: tada 1s;
+    }
+}
+
+@mixin rev-imgs {
+    /* Create View Timeline */
+	view-timeline-name: --revealing-image;
+	view-timeline-axis: block;
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --revealing-image;
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+@mixin read-bar {
+    html {
+        scroll-timeline: --page-scroll block;
+    }
+    @keyframes grow-progress {
+        from { transform: scaleX(0); }
+        to { transform: scaleX(1); }
+    }
+    #progress {
+        position: fixed;
+        left: 0; bottom: 0;
+        width: 100%; height: 6px;
+        background: darkblue;
+        transform-origin: 0 50%;
+        animation: grow-progress auto linear;
+        animation-timeline: --page-scroll;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+@mixin burger {
+.hamburger{
+	position:fixed;
+    background-color:transparent;
+	left:0;
+	top:0;
+	height:30px;
+	width:30px;
+	padding:20px 20px;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index:1002;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+.hamburger.is-active{
+    background-color:none;
+}
+._layer{
+	background: white;
+	margin-bottom:4px;
+	border-radius:2px;
+	width:28px;
+	height:4px;
+	opacity:1;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+.hamburger:hover .-top{
+	-webkit-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.hamburger:hover .-bottom{
+	-webkit-transform:translateY(50%);
+	-ms-transform:translateY(100%);
+	transform:translateY(100%);
+	}
+.hamburger.is-active .-top{
+	-webkit-transform:translateY(200%) rotate(45deg) !important;
+	-ms-transform:translateY(200%) rotate(45deg) !important;
+	transform:translateY(200%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid{
+	opacity:0;
+}
+.hamburger.is-active .-bottom{
+	-webkit-transform:translateY(-200%) rotate(135deg) !important;
+	-ms-transform:translateY(-200%) rotate(135deg) !important;
+	transform:translateY(-200%) rotate(135deg) !important;
+}
+
+.menuppal.is_active{
+    transform: translate3d(0px, 0px, 0px);
+}
+.menuppal{
+    background-color: transparent;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+}
+.menuppal ul{
+    margin:0;
+    padding:0;
+}
+.menuppal ul li { 
+    list-style: none;
+	text-align: left;
+	font-size:1.5rem;
+	line-height:3em;
+	height:3em;
+    padding-left: 65px;
+    background-color: black;
+    color: white;
+    display: block;
+	text-transform:none;
+	font-weight:bold;
+    width: 260px;
+    position: relative;
+    overflow: hidden;
+    transition: padding-left 0.3s ease-in-out;
+    z-index: 1;
+}
+.menu-img {
+    position: absolute;
+    left: 15px; /* Ajustamos para que la imagen aparezca bien */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0; /* Oculta la imagen inicialmente */
+}
+
+.menu-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.menuppal ul li:hover .menu-img {
+    opacity: 1;
+    left: 65px;
+}
+.menuppal ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0;
+}
+.menuppal ul li a:hover{
+    text-decoration: none;
+    color: yellow;
+    padding-left: 40px;
+}
+}
+
+@mixin menu {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        padding: 15px 30px;
+        position: fixed;
+        top: 0;
+        width: 99%;
+        z-index: 1000;
+        border: solid;
+        border-radius: 10px;
+        border-width: 6px;
+        box-sizing: border-box;
+        font-weight: bold;
+        @media (min-width: 1200px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: yellow;
+    }
+    .nav-links a:hover .menu-img {
+        display: flex;
+        opacity: 1;
+        transform: translateX(-30px) translateY(-10px);
+        justify-self: center;
+    }
+    ul li ul.dropdown li {
+        display: block;
+    }
+    ul li ul.dropdown {
+        width: 100%;
+        background: black;
+        position: absolute;
+        z-index: 999;
+        display: none;
+        transform: translateY(90px);
+        margin: 0;
+        border: solid;
+        border-radius: 0 0 10px 10px;
+        border-width: 6px;
+        border-top: none;
+        @media (min-width: 1200px) {
+            transform: translateY(130px);
+        }
+    }
+    ul li:hover ul.dropdown {
+        display: block;
+    }
+
+    /* ---- Estilos de la barra de búsqueda ---- */
+    .search-box {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        gap: 5px;
+    }
+
+    .search-box input {
+        border: none;
+        padding: 5px;
+        outline: none;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .search-box button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    /* Espaciado para evitar que el contenido se oculte debajo del menú fijo */
+    body {
+        padding-top: 70px;
+    }
+
+    /* Estilo para resaltar texto encontrado */
+    .highlight {
+        background-color: yellow;
+        font-weight: bold;
+    }
+}
