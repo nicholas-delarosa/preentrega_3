@@ -1,93 +1,120 @@
-# 🎮✨ Deltarune Fan Page ✨🎮  
-### *Proyecto web por [Nicholas De la Rosa](https://www.github.com/nicholas-delarosa)*
+<h1 align="center">🌌 DELTARUNE FAN PAGE 🌌</h1>
+
+<h3 align="center">🎮 Proyecto creado con pasión por <a href="https://github.com/nicholas-delarosa" target="_blank">Nicholas De la Rosa</a></h3>
 
 <p align="center">
-  <img src="https://nicholas-delarosa.github.io/preentrega_3/images/annoying_dog.png" width="120" alt="Annoying Dog"/>
+  <img src="https://img.shields.io/badge/Proyecto-FanPage-purple?style=for-the-badge&logo=undertale&logoColor=white" />
+  <img src="https://img.shields.io/badge/Coderhouse-Preentrega_3-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-%F0%9F%94%A5%20Épico%20y%20Activo-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Hecho%20con-%F0%9F%92%96%20&%20%F0%9F%94%A5-ff69b4?style=for-the-badge" />
 </p>
 
-¡Bienvenido a una página web dedicada al maravilloso universo de **Deltarune**, creada con 💙 por un fan, para fans!  
-Esta es una entrega para el curso de desarrollo web, y a la vez un homenaje al juego que ha tocado tantos corazones.
+---
+
+## 🌐 DEMO EN VIVO
+
+> 🔗 [**¡Haz clic aquí para entrar al Dark World!**](https://nicholas-delarosa.github.io/preentrega_3/)  
+> 🚀 Sitio hosteado con **GitHub Pages** y armado 100% a mano.
 
 ---
 
-## 🌐 Demo en Vivo
+## 🧭 ÍNDICE
 
-🔗 [Visita la página aquí](https://nicholas-delarosa.github.io/preentrega_3/)
-
----
-
-## 📌 Contenidos
-
-- [📖 Introducción](#-introducción)
-- [📚 Capítulos](#-capítulos)
-- [🎁 Contenido Extra](#-contenido-extra)
-- [❓ FAQ](#-faq)
-- [👤 Créditos](#-créditos)
+- [📖 Introducción](#📖-introducción)
+- [🎬 Capítulos](#🎬-capítulos)
+- [🎶 Extra Musical](#🎶-extra-musical)
+- [❓ Preguntas Frecuentes](#❓-preguntas-frecuentes)
+- [🧑‍💻 Créditos](#🧑‍💻-créditos)
+- [⚙️ Tecnologías Usadas](#⚙️-tecnologías-usadas)
 
 ---
 
-## 📖 Introducción
+## 📖 INTRODUCCIÓN
 
-**Deltarune** es un RPG desarrollado por *Toby Fox*, ambientado en un mundo alterno al famoso *Undertale*.  
-Controlas a Kris, quien junto a Susie y Ralsei viajan por el **Mundo Oscuro**, resolviendo conflictos de forma pacífica o combativa con un sistema de batalla por turnos y mecánicas estilo bullet-hell.
+> _"Solo tú puedes restaurar el balance entre luz y oscuridad..."_
 
-🕹️ *Capítulo 1* se lanzó en 2018, seguido por *Capítulo 2* en 2021.  
-📅 *Los Capítulos 3 y 4* están planeados para lanzarse juntos en 2025.
+**Deltarune** es una obra maestra RPG creada por **Toby Fox**.  
+Esta fanpage es un homenaje jugable y visual a los primeros capítulos, donde exploramos el estilo, personajes y música del universo oscuro.
 
----
-
-## 📚 Capítulos
-
-### Capítulo 1: *The Beginning*  
-Los protagonistas descubren su destino como héroes legendarios. Se enfrentan a desafíos y enemigos mientras intentan sellar una misteriosa fuente de oscuridad.
-
-### Capítulo 2: *A Cyber's World*  
-Una nueva zona digital llena de puzzles, combates únicos y personajes memorables. Aquí, la estética tecnológica cobra vida.
+✨ Estética retro  
+🎮 Mecánicas únicas  
+🗡️ Lore profundo  
+🎵 Música icónica
 
 ---
 
-## 🎁 Contenido Extra
+## 🎬 CAPÍTULOS
 
-🐶 **¿Quieres más?**  
-Haz clic en el perrito para escuchar música descartada del Capítulo 2:  
-[👉 Click aquí para escuchar](https://nicholas-delarosa.github.io/preentrega_3/pages/extra.html)
+### 🔹 Capítulo 1: *Fuente Oscura*
 
-> ⚠️ *El perrito está muy grande porque necesita descanso. No molestar.*
+- Kris, Susie y Ralsei despiertan en otro mundo
+- Confrontan al caos, el destino y a Lancer
+- Sellan su primer portal oscuro
 
----
+### 🔸 Capítulo 2: *Cyber World*
 
-## ❓ FAQ
+- Nueva dimensión digital
+- Aparece la Reina, un personaje dominante y caótica
+- Spamton aparece como vendedor... muy "especial"
 
-¿Dudas sobre personajes, lore, o diferencias con *Undertale*?  
-🧠 Dirígete a nuestra sección de preguntas frecuentes:  
-[🔗 FAQ](https://nicholas-delarosa.github.io/preentrega_3/pages/faq.html)
-
----
-
-## 👤 Créditos
-
-| Autor        | Enlace                                       |
-|--------------|----------------------------------------------|
-| Nicholas De la Rosa | [GitHub](https://www.github.com/nicholas-delarosa) |
-| Repositorio  | [GitHub Repo](https://github.com/Nicholas-Delarosa/preentrega_3) |
-
-🖼️ Imágenes y música: Propiedad de Toby Fox  
-🎓 Proyecto académico para el curso de Desarrollo Web en Coderhouse.
+<p align="center">
+  <img src="https://media.tenor.com/3PhF7EZryIoAAAAC/ralsei-smile.gif" width="300" alt="Ralsei gif" />
+</p>
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🎶 EXTRA MUSICAL
 
-- HTML5
-- CSS3
-- JS
-- Git + GitHub Pages
-- ❤️ Mucho cariño por *Deltarune*
+🎧 ¡Explora el contenido **oculto** de Deltarune!  
+Descubre temas eliminados del Capítulo 2 que aún viven en los rincones secretos.
+
+👉 [**Escucha el contenido extra**](https://nicholas-delarosa.github.io/preentrega_3/pages/tracks.html)
+
+---
+
+## ❓ PREGUNTAS FRECUENTES
+
+💡 ¿Deltarune tiene relación con Undertale?  
+💾 ¿Cuántos capítulos tendrá?  
+🛡️ ¿Se puede jugar sin combatir?
+
+🧠 [Explora la sección de preguntas frecuentes](https://nicholas-delarosa.github.io/preentrega_3/pages/faq.html)
+
+---
+
+## 🧑‍💻 CRÉDITOS
+
+| ✨ Autor | 🌐 GitHub |
+|---------|------------|
+| **Nicholas De la Rosa** | [@nicholas-delarosa](https://github.com/nicholas-delarosa) |
+
+📚 Proyecto para **Coderhouse – Curso de Desarrollo Web**  
+🎮 Basado en el universo de **Deltarune** de Toby Fox
+
+---
+
+## ⚙️ TECNOLOGÍAS USADAS
+
+| 🛠️ Herramienta | 💬 Función |
+|----------------|-----------|
+| `HTML5` | Estructura base del sitio |
+| `CSS3` | Estilos visuales personalizados |
+| `GitHub Pages` | Hosting gratuito y confiable |
+| `💡 Creatividad` | Potenciado al 200% |
 
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Deltarune-Fan%20Page-blue?style=flat-square&logo=undertale&logoColor=white" />
-  <img src="https://img.shields.io/badge/Made%20with-HTML%20%26%20CSS-orange?style=flat-square&logo=html5" />
-  <img src="https://img.shields.io/badge/Status-En%20Desarrollo-yellow?style=flat-square" />
+  <img src="https://media.tenor.com/TkGBxrpGHPcAAAAC/deltarune-deltarune-susie.gif" width="300" alt="Susie GIF" />
 </p>
+
+---
+
+## ⭐ ¿Te gustó?
+
+✨ Si este proyecto te inspiró o te gustó, ¡dale una estrellita al repo!  
+👉 [Ir al repositorio](https://github.com/nicholas-delarosa/preentrega_3)
+
+---
+
+> _"El código es un hechizo. El diseño es su aura. Tú eres el mago."_
