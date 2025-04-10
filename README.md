@@ -4,7 +4,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Proyecto-FanPage-purple?style=for-the-badge&logo=undertale&logoColor=white" />
-  <img src="https://img.shields.io/badge/Coderhouse-Preentrega_3-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-%F0%9F%94%A5%20Épico%20y%20Activo-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Hecho%20con-%F0%9F%92%96%20&%20%F0%9F%94%A5-ff69b4?style=for-the-badge" />
 </p>
